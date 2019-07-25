@@ -442,7 +442,28 @@
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v3.3'
+      });
+    };
 
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your customer chat code -->
+  <div class="fb-customerchat" attribution=setup_tool page_id="2240165929628166" theme_color="#f4511e"
+    logged_in_greeting="Hola! ¿En que te puedo ayudar?" logged_out_greeting="Hola! ¿En que te puedo ayudar?">
+  </div>
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
@@ -607,6 +628,8 @@
     </div>
   </div>
 
+
+
   <!--Footer container-->
 
   <footer class="container-fluid text-center">
@@ -616,6 +639,7 @@
     <p>evelaguti <a href="http://github.com/evelaguti" title="Visit w3schools">github.com/evelaguti</a></p>
   </footer>
 
+  <!-- Load Facebook SDK for JavaScript -->
 
 
   <script>
