@@ -10,8 +10,12 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,vietnamese">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,vietnamese">
+  <link
+    href="https://fonts.googleapis.com/css?family=Crimson+Text|Dancing+Script|Indie+Flower|Raleway|Roboto|Shadows+Into+Light|Ubuntu&display=swap"
+    rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -29,8 +33,8 @@
     }
 
     .divider--snoopy__title {
-      font-family: 'Lobster';
-      font-size: 30px;
+      font-family: 'Shadows Into Light';
+      font-size: 40px;
       line-height: 26px;
       margin-bottom: 15px;
       color: black
@@ -403,6 +407,10 @@
         margin: 25px 0;
       }
 
+      h1 {
+        font-size: 45px;
+      }
+
       /* cambio de tamanio cuando es en celular */
       h2 {
         font-size: 15px;
@@ -564,82 +572,51 @@
     </div><!-- Conatiner end -->
   </section>
 
-  
-  
-    <h2>What our customers say</h2>
-    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment
-              Box</span></h4>
-        </div>
-        <div class="item">
-          <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
-        </div>
-        <div class="item">
-          <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
-        </div>
-      </div>
-
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div>
-
 
   <!-- Container (Contact Section) -->
   <div id="contact" class="container-fluid bg-grey">
     <h2 class="text-center">CONTACTO</h2>
     <div class="row">
-      <div class="col-sm-5">
+      <div class="col-sm-4">
+        <iframe width="380" height="246"
+          src="https://maps.google.com/maps?q=Villa%20alemana&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
+          scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      </div>
+      <div class="col-sm-3">
         <p>Contactanos y responderemos dentro de 24 horas.</p>
         <p><span class="glyphicon glyphicon-map-marker"></span> Villa Alemana, Chile</p>
         <p><span class="glyphicon glyphicon-phone"></span> +5691087106</p>
         <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
       </div>
-      <div class="col-sm-7 slideanim">
+      <div class="col-sm-5 slideanim">
         <div class="row">
           <div class="col-sm-6 form-group">
-            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
           </div>
           <div class="col-sm-6 form-group">
             <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
           </div>
         </div>
-        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comentario" rows="5"></textarea><br>
         <div class="row">
           <div class="col-sm-12 form-group">
-            <button class="btn btn-default pull-right" type="submit">Send</button>
+            <button class="btn btn-default pull-right" type="submit">Enviar</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Image of location/map -->
-  <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+  <!--Footer container-->
 
   <footer class="container-fluid text-center">
     <a href="#myPage" title="To Top">
       <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
-    <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+    <p>evelaguti <a href="http://github.com/evelaguti" title="Visit w3schools">github.com/evelaguti</a></p>
   </footer>
+
+
 
   <script>
     $(document).ready(function () {
