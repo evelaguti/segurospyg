@@ -7,14 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,vietnamese">
-  <link
-    href="https://fonts.googleapis.com/css?family=Crimson+Text|Dancing+Script|Indie+Flower|Raleway|Roboto|Shadows+Into+Light|Ubuntu&display=swap"
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One|Montserrat|Lato|Shadows+Into+Light&display=swap"
     rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -140,6 +133,19 @@
       box-shadow: none;
     }
 
+    .divider--snoopy {
+      padding: 0 9% 20px 9%;
+      text-align: center;
+    }
+
+    .divider--snoopy__title {
+      font-family: 'Shadows Into Light';
+      font-size: 40px;
+      line-height: 26px;
+      margin-bottom: 15px;
+      color: black
+    }
+
     svg {
       top: 0;
       bottom: 0;
@@ -147,6 +153,7 @@
       right: 0;
       margin: auto;
     }
+
 
     .navbar-default .navbar-toggle .icon-bar {
       background-color: #fff;
@@ -198,14 +205,6 @@
       font-size: 20px;
       text-transform: uppercase;
       color: #A9A9A9;
-      font-weight: 600;
-      margin-bottom: 30px;
-    }
-
-    h2.titulo {
-      font-size: 20px;
-      text-transform: uppercase;
-      color: #123EAB;
       font-weight: 600;
       margin-bottom: 30px;
     }
@@ -407,35 +406,11 @@
         margin: 25px 0;
       }
 
-      #contacto-map{
-        width: 300px
-      }
-
-      h1 {
-        font-size: 45px;
-      }
-
-      /* cambio de tamanio cuando es en celular */
-      h2 {
-        font-size: 15px;
-      }
-
       .btn-lg {
         width: 100%;
         margin-bottom: 35px;
       }
-
-      .ts-service-overlay .service-title {
-        padding: 15px 0 55px;
-      }
-
-      .ts-service-overlay .service-content {
-        position: absolute;
-        bottom: -210px;
-      }
     }
-
-
 
     @media screen and (max-width: 480px) {
       .logo {
@@ -446,7 +421,7 @@
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-  <!-- Load Facebook SDK for JavaScript -->
+
   <div id="fb-root"></div>
   <script>
     window.fbAsyncInit = function () {
@@ -476,11 +451,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#myPage">Seguros PyG</a>
+        <a class="navbar-brand" href="#myPage">SegurosPyG</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#ts-services">SERVICIOS</a></li>
+          <li><a href="#services">SERVICIOS</a></li>
           <li><a href="#contact">CONTACTO</a></li>
         </ul>
       </div>
@@ -501,101 +476,104 @@
       <h2>30 años de servicio</h2>
     </div>
   </div>
-  <div class="row wrapper divider--snoopy">
-    <h3 class="divider--snoopy__title">Queremos estar en cada momento importante de tu vida.
-    </h3>
+
+  <div class="container">
+    <div class="row wrapper divider--snoopy">
+      <h3 class="divider--snoopy__title">Queremos estar en cada momento importante de tu vida.
+      </h3>
+    </div>
   </div>
-  <!-- Container (Services Section) -->
-  <section id="ts-services" class="ts-services">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <h2 data-title="Our Services" class="section-title-dash">
-            Nuestros Servicios<span>&nbsp;</span>
-          </h2>
-        </div><!-- Col end -->
-      </div>
-      <!--/ Title row end -->
-      <div class="row">
-        <div class="col-lg-4 col-md-12">
-          <div class="ts-service-overlay">
-            <div class="ts-image-wrapper">
-              <img class="img-fluid" src="images/service-1.jpg" alt="">
-            </div>
-            <div class="service-content">
-              <h3 class="service-title"><i class="icon icon-bus2"></i> Seguro Vehículos</h3>
-              <p>Cubre el daño hecho a su vehículo además del daño causado por éste. Asegure su vehículo con nosotros.</p>
-              <p><a class="btn btn-primary icon-bg" href="#">Contactenos <i class="icon icon-arrow-right"></i></a></p>
-            </div>
-          </div><!-- Service1 end -->
-        </div><!-- Col 1 end -->
 
-        <div class="col-lg-4 col-md-12">
-          <div class="ts-service-overlay">
-            <div class="ts-image-wrapper">
-              <img class="img-fluid" src="images/service-2.jpg" alt="">
-            </div>
-            <div class="service-content">
-              <h3 class="service-title"><i class="icon icon-home2"></i> Seguro Hogar</h3>
-              <p>No hay nada mas importante que su hogar asegurelo contra robos e incendios. Asegure su casa con nosotros.</p>
-              <p><a class="btn btn-primary icon-bg" href="#">Contactenos <i class="icon icon-arrow-right"></i></a></p>
-            </div>
-          </div><!-- Servic2 end -->
-        </div><!-- Col 2 end -->
-
-        <div class="col-lg-4 col-md-12">
-          <div class="ts-service-overlay">
-            <div class="ts-image-wrapper">
-              <img class="img-fluid" src="images/service-3.jpg" alt="">
-            </div>
-            <div class="service-content">
-              <h3 class="service-title"><i class="icon icon-family"></i> Seguro de Vida</h3>
-              <p>La única forma de asegurar la vida es resguardar a los suyos. Asegure su vida con nosotros.
-              </p>
-              <p><a class="btn btn-primary icon-bg" href="#">Contactenos <i class="icon icon-arrow-right"></i></a></p>
-            </div>
-          </div><!-- Service3 end -->
-        </div><!-- Col 3 end -->
-
-        <div class="gap-30"></div>
-
-        <div class="col-lg-4 col-md-12">
-          <div class="ts-service-overlay">
-            <div class="ts-image-wrapper">
-              <img class="img-fluid" src="images/service-4.jpg" alt="">
-            </div>
-            <div class="service-content">
-              <h3 class="service-title"><i class="icon icon-graphic-3"></i> Seguro de Emprendimiento</h3>
-              <p>En el mundo ajetreado de hoy necesitará un amigo confiable. Asegure su empresa con nosotros.
-              </p>
-              <p><a class="btn btn-primary icon-bg" href="#">Contactenos <i class="icon icon-arrow-right"></i></a></p>
-            </div>
-          </div><!-- Service4 end -->
-        </div><!-- Col 4 end -->
-
-        <div class="col-lg-4 col-md-12">
-          <div class="ts-service-overlay">
-            <div class="ts-image-wrapper">
-              <img class="img-fluid" src="images/service-5.jpg" alt="">
-            </div>
-            <div class="service-content">
-              <h3 class="service-title"><i class="icon icon-heart-pulse"></i> Seguro de Salud</h3>
-              <p>Para vivir la vida al máximo necesitará del mejor consejero. Asegure su salud con nosotros.
-              </p>
-              <p><a class="btn btn-primary icon-bg" href="#">Contactenos <i class="icon icon-arrow-right"></i></a></p>
-            </div>
-          </div><!-- Service5 end -->
-        </div><!-- Col 5 end -->
-
-        <div class="col-lg-4 col-md-12">
-          <div class="ts-image-wrapper ts-ad">
-            <img class="img-fluid" src="images/ad1.jpg" alt="">
+  <div class="container ts-services">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h2 data-title="Our Services" class="section-title-dash">
+          Nuestros Servicios<span>&nbsp;</span>
+        </h2>
+      </div><!-- Col end -->
+    </div>
+    <!--/ Title row end -->
+    <div class="row">
+      <div class="col-lg-4 col-md-12">
+        <div class="ts-service-overlay">
+          <div class="ts-image-wrapper">
+            <img class="img-fluid" src="images/service-1.jpg" alt="">
           </div>
-        </div><!-- Col 6 end -->
+          <div class="service-content">
+            <h3 class="service-title"><i class="icon icon-bus2"></i> Seguro Vehículos</h3>
+            <p>Cubre el daño hecho a su vehículo además del daño causado por éste. Asegure su vehículo con nosotros.
+            </p>
+            <p><a class="btn btn-primary icon-bg" href="#">Contactenos <i class="icon icon-arrow-right"></i></a></p>
+          </div>
+        </div><!-- Service1 end -->
+      </div><!-- Col 1 end -->
 
-      </div><!-- Main row end -->
-    </div><!-- Conatiner end -->
-  </section>
+      <div class="col-lg-4 col-md-12">
+        <div class="ts-service-overlay">
+          <div class="ts-image-wrapper">
+            <img class="img-fluid" src="images/service-2.jpg" alt="">
+          </div>
+          <div class="service-content">
+            <h3 class="service-title"><i class="icon icon-home2"></i> Seguro Hogar</h3>
+            <p>No hay nada mas importante que su hogar asegurelo contra robos e incendios. Asegure su casa con
+              nosotros.</p>
+            <p><a class="btn btn-primary icon-bg" href="#">Contactenos <i class="icon icon-arrow-right"></i></a></p>
+          </div>
+        </div><!-- Servic2 end -->
+      </div><!-- Col 2 end -->
+
+      <div class="col-lg-4 col-md-12">
+        <div class="ts-service-overlay">
+          <div class="ts-image-wrapper">
+            <img class="img-fluid" src="images/service-3.jpg" alt="">
+          </div>
+          <div class="service-content">
+            <h3 class="service-title"><i class="icon icon-family"></i> Seguro de Vida</h3>
+            <p>La única forma de asegurar la vida es resguardar a los suyos. Asegure su vida con nosotros.
+            </p>
+            <p><a class="btn btn-primary icon-bg" href="#">Contactenos <i class="icon icon-arrow-right"></i></a></p>
+          </div>
+        </div><!-- Service3 end -->
+      </div><!-- Col 3 end -->
+
+      <div class="gap-30"></div>
+
+      <div class="col-lg-4 col-md-12">
+        <div class="ts-service-overlay">
+          <div class="ts-image-wrapper">
+            <img class="img-fluid" src="images/service-4.jpg" alt="">
+          </div>
+          <div class="service-content">
+            <h3 class="service-title"><i class="icon icon-graphic-3"></i> Seguro de Emprendimiento</h3>
+            <p>En el mundo ajetreado de hoy necesitará un amigo confiable. Asegure su empresa con nosotros.
+            </p>
+            <p><a class="btn btn-primary icon-bg" href="#">Contactenos <i class="icon icon-arrow-right"></i></a></p>
+          </div>
+        </div><!-- Service4 end -->
+      </div><!-- Col 4 end -->
+
+      <div class="col-lg-4 col-md-12">
+        <div class="ts-service-overlay">
+          <div class="ts-image-wrapper">
+            <img class="img-fluid" src="images/service-5.jpg" alt="">
+          </div>
+          <div class="service-content">
+            <h3 class="service-title"><i class="icon icon-heart-pulse"></i> Seguro de Salud</h3>
+            <p>Para vivir la vida al máximo necesitará del mejor consejero. Asegure su salud con nosotros.
+            </p>
+            <p><a class="btn btn-primary icon-bg" href="#">Contactenos <i class="icon icon-arrow-right"></i></a></p>
+          </div>
+        </div><!-- Service5 end -->
+      </div><!-- Col 5 end -->
+
+      <div class="col-lg-4 col-md-12">
+        <div class="ts-image-wrapper ts-ad">
+          <img class="img-fluid" src="images/ad1.jpg" alt="">
+        </div>
+      </div><!-- Col 6 end -->
+
+    </div><!-- Main row end -->
+  </div><!-- Conatiner end -->
 
 
   <!-- Container (Contact Section) -->
@@ -603,7 +581,7 @@
     <h2 class="text-center">CONTACTO</h2>
     <div class="row">
       <div class="col-sm-4">
-        <iframe id="contacto-map" width="380" height="246"
+        <iframe width="600" height="600"
           src="https://maps.google.com/maps?q=Villa%20alemana&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
           scrolling="no" marginheight="0" marginwidth="0"></iframe>
       </div>
@@ -632,8 +610,6 @@
     </div>
   </div>
 
-
-
   <!--Footer container-->
 
   <footer class="container-fluid text-center">
@@ -643,10 +619,50 @@
     <p>evelaguti <a href="http://github.com/evelaguti" title="Visit w3schools">github.com/evelaguti</a></p>
   </footer>
 
-  <!-- Load Facebook SDK for JavaScript -->
-
 
   <script>
+
+    function iframeAutoScale() {
+
+      'use strict';
+
+      var
+        iframes = document.getElementsByTagName('iframe'),
+        index = 0;
+
+      if (iframes.length > 0) {
+        for (index = 0; index < iframes.length; index++) {
+          var
+            iframe = iframes[index],
+            parent = iframe.parentElement,
+            parentPadding = parseInt(window.getComputedStyle(parent, null).getPropertyValue('padding-left')) + parseInt(window.getComputedStyle(parent, null).getPropertyValue('padding-right')),
+            parentWidth = parent.clientWidth - parentPadding,
+            ratio = 0.75,	// default ratio (4:3)
+            width = iframe.clientWidth,
+            height = iframe.clientHeight;
+
+          // overwrite default ratio if width and height attributes are not set
+          if (width !== undefined && height !== undefined) {
+            ratio = height / width;
+          }
+
+          iframe.setAttribute('width', parentWidth);
+          iframe.setAttribute('height', parentWidth * ratio);
+        }
+      }
+    }
+
+    // onload
+    document.addEventListener('DOMContentLoaded', function () {
+      iframeAutoScale();
+    }, false);
+
+    // on window resize
+    window.onresize = function (event) {
+      iframeAutoScale();
+    };
+
+
     $(document).ready(function () {
       // Add smooth scrolling to all links in navbar + footer link
       $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
@@ -681,6 +697,8 @@
         });
       });
     })
+
+
   </script>
 
 </body>
