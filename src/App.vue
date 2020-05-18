@@ -1,10 +1,12 @@
 <template>
   <div>
     <navbar></navbar>
+    <whatsapp></whatsapp>
     <jumbotron></jumbotron>
     <motto title="Nuestro compromiso es proteger lo mas valioso de tu vida."/>
     <carousel/>
-    <services/>
+    <services v:on:childToParent="onClickService"/>
+    
     <contact/>
     <futer/>
   </div>
@@ -13,22 +15,37 @@
 <script>
 import Navbar from "../components/navbar.vue";
 import Jumbotron from "../components/jumbotron.vue";
+import Whatsapp from "../components/whatsapp.vue";
 import Motto from "../components/motto.vue";
 import Carousel from "../components/carousel.vue";
 import Services from "../components/services.vue";
+import Detail from "../components/detail.vue";
 import Contact from "../components/contact.vue";
 import Futer from "../components/futer.vue";
 export default {
   name: "app",
 
+  data() {
+    return {
+      desdeServicio: {}
+    };
+  },
+
   components: {
     Navbar,
     Jumbotron,
+    Whatsapp,
     Motto,
     Carousel,
     Services,
     Contact,
-    Futer
+    Detail,
+    Futer,
+  },
+  methods: {
+    onClickService(value) {
+      this.desdeServicio = value;
+    },
   },
 };
 
