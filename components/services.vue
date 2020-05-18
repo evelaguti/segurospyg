@@ -202,6 +202,20 @@
                 <i class="icon icon-heart-pulse"></i> Responsabilidad Civil Médica
               </h3>
               <p>Para vivir la vida al máximo necesitará del mejor consejero. Asegure su salud con nosotros.</p>
+        <div class="col-lg-4 col-md-12">
+          <div class="ts-service-overlay">
+            <div class="ts-image-wrapper">
+              <img class="img-fluid" src="images/service-10.jpg" alt />
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">
+                <i class="icon icon-heart-pulse"></i> Rentas Vitalicias                           
+              </h3>
+              <p>
+                Asegure su pensión para toda la vida y sin perdida,
+                 lo asesoraremos en las pensiones de invalidez, de sobreviviencia y de vejez
+                 y anticipada.
+              </p>
               <p>
                 <a class="btn btn-primary icon-bg" href="#contact">
                   Contactenos
